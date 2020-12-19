@@ -14,8 +14,118 @@ body {
 
 header {
     box-shadow: 0px 0px 10px 0px #535353;
+    margin-bottom: 50px;
 }
 
+.block {
+    margin-bottom: 30px;
+}
+
+
+
+/* Privilege */
+.block-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.my-privilege {
+    background-color: white;
+    border: 1px solid #0A85ED;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 32px rgba(10, 133, 237, 0.25);
+    border-radius: 15px;
+    padding: 14px 14px 14px 32px;
+    margin-bottom: 8px;
+    display: flex;
+}
+.left-wrapper.privilege-wrapper {
+    width: 90%;
+}
+.right-wrapper.privilege-wrapper {
+    width: 10%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #C4C4C4;
+}
+.left-wrapper.privilege-wrapper > .title, .left-wrapper.privilege-wrapper-with-button > .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    color: #0A85ED;
+}
+.left-wrapper.privilege-wrapper > .description, .left-wrapper.privilege-wrapper-with-button > .description {
+    margin: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #C4C4C4;
+}
+.used-privilege-link {
+    text-align: center;
+    color: black!important;
+}
+.possible-privileges {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(10, 133, 237, 0.25);
+    border-radius: 10px;
+    padding: 32px;
+}
+.possible-privileges__link {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(10, 133, 237, 0.25);
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 8px;
+    padding: 14px 68px 14px 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0A85ED;
+    text-decoration: none;
+}
+.left-wrapper.privilege-wrapper-with-button {
+    width: 80%;
+}
+.right-wrapper.privilege-wrapper-with-button {
+    width: 20%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #C4C4C4;
+}
+.right-wrapper.privilege-wrapper-with-button > button {
+    background: #FFFFFF;
+    border: 2px solid #07C8F9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #07C8F9;
+}
+.vk-new > img {
+    margin-bottom: 8px;
+}
 
 
 /* Bootstrap customize */

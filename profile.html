@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-navbar">
+        <div class="container-fluid nav-panel">
+            <a href="index.html" class="nav-brand-logo brand-logo navbar-brand">
+                <span class="brand-logo__left-border"></span>
+                <span class="brand-logo__text">Social<br>Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Привилегии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Льготы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Битва рейтингов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ВТБ.Работа</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="dashboard">
+        <div class="container">
+
+            <!-- Card Element -->
+            <div class="dashboard-card profile-card default-card">
+                <div class="dc__top-wrapper">
+                    <img class="dashboard-card__image">
+                    <div class="vertical-linker">
+                        <h4 class="dashboard-card__title">Михаил Родионов</h4>
+                        <p class="dashboard-card__paragraph">ЯРГУ, Экономический факультет, 2 курс</p>
+                    </div>
+                    <a href="#" class="profile-link">Профиль</a>
+                </div>
+                <div class="dc__bottom-wrapper">
+                    <a href="#" class="btn-link">Битва рейтингов</a>
+                    <span class="dc__bottom-wrapper__span">Время побеждать!</span>
+                </div>
+            </div>
+
+            <!-- Card Element -->
+            <div class="dashboard-card rating-card default-card">
+                <div class="dc__top-wrapper">
+                    <div>
+                        <span id="your-rating" class="your-rating">8.4</span>
+                        <p class="">Ваш рейтинг</p>
+                    </div>
+                    <img class="your-rating-preview" src="src/preview-rating.png">
+                </div>
+                <div class="dc__bottom-wrapper">
+                    <a href="#" class="btn-link your-rating-link">Смотреть историю</a>
+                </div>
+            </div>
+
+            <!-- Card Element -->
+            <div class="dashboard-card faculty-rating-card default-card">
+                <div class="dc__top-wrapper">
+                    <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                    <div class="row m-auto">
+                        <div class="col">
+                            <label class="d-block faculty-card__label">Всего баллов:</label>
+                            <input class="faculty-card__input" type="text" value="357" disabled>
+                        </div>
+                        <div class="col">
+                            <label class="d-block faculty-card__label">Средний балл:</label>
+                            <input class="faculty-card__input" type="text" value="9.5" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Element -->
+            <div class="dashboard-card your-contribution-card default-card">
+                <div class="dc__top-wrapper">
+                    <h3 class="d-block w-100 your-contribution__count"><span id="your-contribution">+3</span>%</h3>
+                    <p class="d-block your-contribution__subtitle">Вклад в гонку факультетов</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="privilege container">
+        <div class="row">
+            <div class="col">
+                <h3 class="block-title">Мои привилегии</h3>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

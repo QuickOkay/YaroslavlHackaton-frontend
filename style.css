@@ -472,18 +472,17 @@ a.nav-link {
 /* Auth Panel */
 .auth-panel {
     max-width: 460px!important;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    margin-left: 15%!important;
+    margin-top: 50px!important;
 }
 .auth-form {
-    background: #FFFFFF;
+    background: rgba(255 255 255 / 0.7);
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 25px;
     padding: 168px 30px 30px 30px!important;
     margin-top: 8px!important;
+    backdrop-filter: blur(15px);
 }
 .form-elem {
     margin-bottom: 8px;

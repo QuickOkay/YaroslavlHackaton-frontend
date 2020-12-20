@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Битвы рейтингов</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-navbar">
+        <div class="container-fluid nav-panel">
+            <a href="index.html" class="nav-brand-logo brand-logo navbar-brand">
+                <span class="brand-logo__left-border"></span>
+                <span class="brand-logo__text">Social<br>Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="privilege.html">Привилегии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Льготы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="battle.html">Битва рейтингов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ВТБ.Работа</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="dashboard">
+        <div class="container">
+            <!-- Card Element -->
+            <div class="dashboard-card battle-rating-card default-card">
+                <div class="dc__top-wrapper">
+                    <h4 class="rating-card__title">Ваш рейтинг:</h4>
+                    <div class="position-list">
+                        <div class="position-list__university">
+                            <span id="position-list-university">23</span>
+                            <span class="position-list__span">место в университете</span>
+                        </div>
+                        <div class="position-list__faculty">
+                            <span id="position-list-faculty">3</span>
+                            <span class="position-list__span">место на факультете</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Element -->
+            <div class="dashboard-card faculty-rating-card default-card">
+                <div class="dc__top-wrapper">
+                    <h4 class="your-faculty w-100"><span id="user-faculty">Экономический</span></h4>
+                    <div class="row">
+                        <div class="col">
+                            <label class="d-block faculty-card__label">Средний балл:</label>
+                            <input class="faculty-card__input" type="text" value="6.7" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Element -->
+            <div class="dashboard-card your-contribution-card default-card">
+                <div class="dc__top-wrapper">
+                    <h3 class="d-block w-100 your-contribution__count"><span id="your-contribution">+3</span>%</h3>
+                    <p class="d-block your-contribution__subtitle">Вклад в гонку факультетов</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="battle container">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <div class="battle-block">
+                    <h2 class="battle-block__title block-title">Топ 10 университета</h2>
+                    <button class="btn btn-primary block-button">Поднять рейтинг</button>
+                    <div class="battle-block__list">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="battle-block">
+                    <h2 class="battle-block__title">Топ 100 университета</h2>
+
+                    <div class="battle-block__list">
+                        <h3 class="battle-block__list-title">11-20</h3>
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="battle-block__list">
+                        <h3 class="battle-block__list-title">21-30</h3>
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="battle-block__list">
+                        <h3 class="battle-block__list-title">31-40</h3>
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="battle-block__list">
+                        <h3 class="battle-block__list-title">41-50</h3>
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img class="battle-user-img">
+                                <div class="battle-block__username-block">
+                                    <span class="battle-block__username">Артемий</span>
+                                    <span class="battle-block__username">Лебедев</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="block-title">Гонка факультетов</h3>
+                <div class="dashboard-card modal-card faculty-rating-card default-card">
+                    <div class="dc__top-wrapper">
+                        <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-block faculty-card__label">Средний балл:</label>
+                                <input class="faculty-card__input" type="text" value="6.7" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card modal-card faculty-rating-card default-card">
+                    <div class="dc__top-wrapper">
+                        <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-block faculty-card__label">Средний балл:</label>
+                                <input class="faculty-card__input" type="text" value="6.7" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card modal-card faculty-rating-card default-card">
+                    <div class="dc__top-wrapper">
+                        <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-block faculty-card__label">Средний балл:</label>
+                                <input class="faculty-card__input" type="text" value="6.7" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card modal-card faculty-rating-card default-card">
+                    <div class="dc__top-wrapper">
+                        <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-block faculty-card__label">Средний балл:</label>
+                                <input class="faculty-card__input" type="text" value="6.7" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card modal-card faculty-rating-card default-card">
+                    <div class="dc__top-wrapper">
+                        <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                        <div class="row">
+                            <div class="col">
+                                <label class="d-block faculty-card__label">Средний балл:</label>
+                                <input class="faculty-card__input" type="text" value="6.7" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

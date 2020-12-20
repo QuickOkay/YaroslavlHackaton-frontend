@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-navbar">
+        <div class="container-fluid nav-panel">
+            <a href="index.html" class="nav-brand-logo brand-logo navbar-brand">
+                <span class="brand-logo__left-border"></span>
+                <span class="brand-logo__text">Social<br>Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="privilege.html">Привилегии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Льготы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="battle.html">Битва рейтингов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ВТБ.Работа</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="dashboard">
+        <div class="container">
+
+            <!-- Card Element -->
+            <div class="dashboard-card search-card default-card">
+                <div class="dc__top-wrapper">
+                    <input class="search-card__input" type="text" placeholder="Тематика курсов">
+                </div>
+                <div class="dc__bottom-wrapper">
+                    <div class="tags-list">
+                        <button class="btn btn-primary active">Программирование 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-primary active">Python
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-primary active">NodeJS
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="courses container">
+        <div class="row">
+            <div class="col-12 col-md-7 block">
+                <div class="courses-list">
+                    <div class="course">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="course-image">
+                                    <img src="src/python-developer-course.png">
+                                </div>
+                                <div class="course-bonus-list">
+                                    <div class="course-bonus">
+                                        <img src="src/vtb_new_logo_2018 1.png" alt="Бонус ВТБ">
+                                        <span>Бонус</span>
+                                    </div>
+                                    <div class="course-bonus">
+                                        <span class="course-image-span">%</span>
+                                        <span>Рейтинг</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <h4 class="course-title">Python Разработчик</h4>
+                                <div class="course-tag-list">
+                                    <div class="course-tag">Python 3.4 + 2.7</div>
+                                    <div class="course-tag">TCP/IP Sockets</div>
+                                    <div class="course-tag">SQLite3</div>
+                                    <div class="course-tag">Шаблоны программирования</div>
+                                    <div class="course-tag">Дипломный проект</div>
+                                    <div class="course-tag">Unit тестирование</div>
+                                </div>
+                                <div class="course-price">
+                                    <span class="course-old-price">45 000</span>
+                                    <span class="course-current-price">37 999 ₽ / 3 месяца</span>
+                                </div>
+                                <div class="course-button">
+                                    <button class="btn btn-primary">Выбрать</button>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="course-image">
+                                    <img src="src/nodejs-developer-course.png">
+                                </div>
+                                <div class="course-bonus-list">
+                                    <div class="course-bonus">
+                                        <img src="src/vtb_new_logo_2018 1.png" alt="Бонус ВТБ">
+                                        <span>Бонус</span>
+                                    </div>
+                                    <div class="course-bonus">
+                                        <span class="course-image-span">%</span>
+                                        <span>Рейтинг</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <h4 class="course-title">Web Разработчик (NodeJS)</h4>
+                                <div class="course-tag-list">
+                                    <div class="course-tag">HTML5, CSS3</div>
+                                    <div class="course-tag">NodeJS</div>
+                                    <div class="course-tag">DHTNL, XML</div>
+                                    <div class="course-tag">Шаблоны проектированирования</div>
+                                    <div class="course-tag">Дипломный проект</div>
+                                    <div class="course-tag">Технология Ajax</div>
+                                </div>
+                                <div class="course-price">
+                                    <span class="course-old-price">45 000</span>
+                                    <span class="course-current-price">37 999 ₽ / 3 месяца</span>
+                                </div>
+                                <div class="course-button">
+                                    <button class="btn btn-primary">Выбрать</button>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 block">
+                <div class="possible-privileges">
+                    <h4 class="possible-privileges__title">Пройденные курсы:</h4>
+                    <a href="#" class="possible-privileges__link">3D графический дизайн</a>
+                    <a href="#" class="possible-privileges__link">3D графический дизайн</a>
+                    <a href="#" class="possible-privileges__link">3D графический дизайн</a>
+                    <a href="#" class="possible-privileges__link">3D графический дизайн</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,33 +1,33 @@
 function switchForm(role) {
     if (role == "student") {
-        document.getElementById("student-btn").classList.remove("active");
-        document.getElementById("abiturient-btn").classList.remove("active");
-        document.getElementById("guest-btn").classList.remove("active");
+        $('#student-btn')[0].classList.remove("active");
+        $('#abiturient-btn')[0].classList.remove("active");
+        $('#guest-btn')[0].classList.remove("active");
 
-        document.getElementById("student-btn").classList.add("active");
+        $('#student-btn')[0].classList.add("active");
 
-        document.getElementById("student").style.display = "block";
-        document.getElementById("abiturient").style.display = "none";
-        document.getElementById("guest").style.display = "none";
+        $('#student')[0].style.display = "block";
+        $('#abiturient')[0].style.display = "none";
+        $('#guest')[0].style.display = "none";
     } else if (role == "abiturient") {
-        document.getElementById("student-btn").classList.remove("active");
-        document.getElementById("abiturient-btn").classList.remove("active");
-        document.getElementById("guest-btn").classList.remove("active");
+        $('#student-btn')[0].classList.remove("active");
+        $('#abiturient-btn')[0].classList.remove("active");
+        $('#guest-btn')[0].classList.remove("active");
 
-        document.getElementById("abiturient-btn").classList.add("active");
+        $('#abiturient-btn')[0].classList.add("active");
 
-        document.getElementById("student").style.display = "none";
-        document.getElementById("abiturient").style.display = "block";
-        document.getElementById("guest").style.display = "none";
+        $('#student')[0].style.display = "none";
+        $('#abiturient')[0].style.display = "block";
+        $('#guest')[0].style.display = "none";
     } else if (role == "guest") {
-        document.getElementById("student-btn").classList.remove("active");
-        document.getElementById("abiturient-btn").classList.remove("active");
-        document.getElementById("guest-btn").classList.remove("active");
+        $('#student-btn')[0].classList.remove("active");
+        $('#abiturient-btn')[0].classList.remove("active");
+        $('#guest-btn')[0].classList.remove("active");
 
-        document.getElementById("guest-btn").classList.add("active");
+        $('#guest-btn')[0].classList.add("active");
 
-        document.getElementById("student").style.display = "none";
-        document.getElementById("abiturient").style.display = "none";
-        document.getElementById("guest").style.display = "block";
+        $('#student')[0].style.display = "none";
+        $('#abiturient')[0].style.display = "none";
+        $('#guest')[0].style.display = "block";
     }
 }

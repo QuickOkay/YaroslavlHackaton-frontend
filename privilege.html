@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Привилегии</a>
+                        <a class="nav-link active" href="privilege.html">Привилегии</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Льготы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Курсы</a>
+                        <a class="nav-link" href="courses.html">Курсы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Битва рейтингов</a>
+                        <a class="nav-link" href="battle.html">Битва рейтингов</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ВТБ.Работа</a>
@@ -52,10 +52,10 @@
                         <h4 class="dashboard-card__title">Михаил Родионов</h4>
                         <p class="dashboard-card__paragraph">ЯРГУ, Экономический факультет, 2 курс</p>
                     </div>
-                    <a href="#" class="profile-link">Профиль</a>
+                    <a href="achievements.html" class="profile-link">Профиль</a>
                 </div>
                 <div class="dc__bottom-wrapper">
-                    <a href="#" class="btn-link">Битва рейтингов</a>
+                    <a href="battle.html" class="btn-link">Битва рейтингов</a>
                     <span class="dc__bottom-wrapper__span">Время побеждать!</span>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                     <img class="your-rating-preview" src="src/preview-rating.png">
                 </div>
                 <div class="dc__bottom-wrapper">
-                    <a href="#" class="btn-link your-rating-link">Смотреть историю</a>
+                    <a class="btn-link your-rating-link" data-bs-toggle="modal" data-bs-target="#privilege-history-modal">Смотреть историю</a>
                 </div>
             </div>
 
@@ -78,14 +78,10 @@
             <div class="dashboard-card faculty-rating-card default-card">
                 <div class="dc__top-wrapper">
                     <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
-                    <div class="row m-auto">
-                        <div class="col">
-                            <label class="d-block faculty-card__label">Всего баллов:</label>
-                            <input class="faculty-card__input" type="text" value="357" disabled>
-                        </div>
+                    <div class="row">
                         <div class="col">
                             <label class="d-block faculty-card__label">Средний балл:</label>
-                            <input class="faculty-card__input" type="text" value="9.5" disabled>
+                            <input class="faculty-card__input" type="text" value="6.7" disabled>
                         </div>
                     </div>
                 </div>
@@ -147,7 +143,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="w-100 d-block used-privilege-link">Использованные привилегии</a>
+                    <a class="w-100 d-block used-privilege-link" data-bs-toggle="modal" data-bs-target="#used-privilege-modal">Использованные привилегии</a>
                 </div>
             </div>
             <div class="col-12 col-md-5 block">
@@ -163,7 +159,11 @@
             </div>
             <div class="col-12 col-md-7 block">
                 <h3 class="block-title">Привилегии</h3>
-                <div class="privilege-filter"></div>
+                <div class="privilege-filter">
+                    <button class="btn btn-primary active">Общество</button>
+                    <button class="btn btn-primary">Спорт</button>
+                    <button class="btn btn-primary">Наука</button>
+                </div>
                 <div class="my-privilege-list">
                     <div class="my-privilege">
                         <div class="left-wrapper privilege-wrapper-with-button">
@@ -234,6 +234,175 @@
             </div>
         </div>
     </main>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="used-privilege-modal" tabindex="-1" aria-labelledby="used-privilege-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="used-privilege-modal-label">Использованные привилегии</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Третий семестр</h3>
+                    <div class="modal__used-privilege-block">
+                        <h4 class="modal__used-privilege-block__title">11.2020</h4>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__used-privilege-block">
+                        <h4 class="modal__used-privilege-block__title">10.2020</h4>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                        <div class="my-privilege">
+                            <div class="left-wrapper privilege-wrapper">
+                                <h4 class="title">Скидка 15% на Spotify</h4>
+                                <p class="description">Spotify, чтобы в большой компании всегда была музыка</p>
+                            </div>
+                            <div class="right-wrapper privilege-wrapper">
+                                <span>01.11-21.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="privilege-history-modal" tabindex="-1" aria-labelledby="privilege-history-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privilege-history-modal-label">История рейтинга</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="dashboard-modal">
+                        <!-- Card Element -->
+                        <div class="dashboard-card modal-card rating-card default-card">
+                            <div class="dc__top-wrapper">
+                                <div>
+                                    <span id="your-rating" class="your-rating">8.4</span>
+                                    <p class="">Ваш рейтинг</p>
+                                </div>
+                                <img class="your-rating-preview" src="src/preview-rating.png">
+                            </div>
+                            <div class="modal-rating-faculty-contribution">
+                                <h3 class="d-block w-100 your-contribution__count"><span id="your-contribution">+3</span>%</h3>
+                                <p class="d-block your-contribution__subtitle">Вклад в гонку<br> факультетов</p>
+                            </div>
+                        </div>
+
+                        <!-- Card Element -->
+                        <div class="dashboard-card modal-card faculty-rating-card default-card">
+                            <div class="dc__top-wrapper">
+                                <h4 class="your-faculty w-100"><span id="faculty-position">1.</span> <span id="user-faculty">Экономический</span></h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="d-block faculty-card__label">Средний балл:</label>
+                                        <input class="faculty-card__input" type="text" value="6.7" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="faculty-rating-history">
+                        <div class="faculty-contribution-history">
+                            <div class="faculty-contribution-history__block">
+                                <h4 class="modal-rating-title">1 место на студенческой весне 2019</h4>
+                                <div class="faculty-contribution-history__block-tags">
+                                    <div class="block-tag">Общество</div>
+                                    <div class="block-tag">Победитель</div>
+                                </div>
+                            </div>
+                            <span class="faculty-contribution-history__count">+2.0</span>
+                        </div>
+                        <div class="faculty-contribution-history">
+                            <div class="faculty-contribution-history__block">
+                                <h4 class="modal-rating-title">1 место на студенческой весне 2019</h4>
+                                <div class="faculty-contribution-history__block-tags">
+                                    <div class="block-tag">Общество</div>
+                                    <div class="block-tag">Победитель</div>
+                                </div>
+                            </div>
+                            <span class="faculty-contribution-history__count">+2.0</span>
+                        </div>
+                        <div class="faculty-contribution-history">
+                            <div class="faculty-contribution-history__block">
+                                <h4 class="modal-rating-title">1 место на студенческой весне 2019</h4>
+                                <div class="faculty-contribution-history__block-tags">
+                                    <div class="block-tag">Общество</div>
+                                    <div class="block-tag">Победитель</div>
+                                </div>
+                            </div>
+                            <span class="faculty-contribution-history__count">+2.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
